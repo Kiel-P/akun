@@ -8,7 +8,6 @@
 20.174.15.226,443,AE,Microsoft Corporation
 3.29.240.49,443,AE,Amazon Data Services UAE
 31.130.149.210,443,AE,Hurricane Electric LLC
-45.86.228.104,443,AE,BlueVPS OU
 84.235.245.65,2096,AE,Cloudflare Inc
 84.235.245.75,8443,AE,Oracle Corporation
 84.235.250.237,443,AE,Oracle Svenska AB
