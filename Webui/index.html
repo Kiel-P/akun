@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiheo WebUI</title>
+    <!-- Memanggil file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header-bar">
+                <h1 class="terminal-prompt">
+                    <span class="square"></span>
+                    root@kiheo:~#<span class="blink-cursor blue">_</span>
+                </h1>
+                <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">
+                    <span id="themeIcon">🌙</span>
+                </button>
+            </div>
+            
+            <label>1. Pilih Negara:</label>
+            <select id="countrySelect" onchange="filterProxiesByCountry()">
+                <option value="">-- Pilih Negara Terlebih Dahulu --</option>
+            </select>
+
+            <label>2. Pilih Proxy Spesifik:</label>
+            <div class="proxy-container" id="proxyCheckboxList">
+                <span style="color: var(--muted-text); font-size: 0.9rem;">Silakan pilih negara di atas...</span>
+            </div>
+
+            <label>3. Format Konfigurasi:</label>
+            <select id="format" onchange="toggleClashSubOptions()">
+                <option value="vless">VLESS</option>
+                <option value="trojan">Trojan</option>
+                <option value="vmess">VMess</option>
+                <option value="clash">Clash Meta (YAML)</option>
+            </select>
+
+            <div id="clashSubOptionsContainer" style="display: none; margin-top: 10px;">
+                <label>Pilih Jenis Protokol Clash Meta:</label>
+                <select id="clashSubFormat">
+                    <option value="vless">VLESS</option>
+                    <option value="trojan">Trojan</option>
+                    <option value="vmess">VMess</option>
+                </select>
+            </div>
+
+            <button class="main-btn" onclick="generateConfig()">
+                <span class="wavy-text">
+                    <span>G</span><span>e</span><span>n</span><span>e</span><span>r</span><span>a</span><span>t</span><span>e</span><span>&nbsp;</span><span>C</span><span>o</span><span>n</span><span>f</span><span>i</span><span>g</span>
+                </span>
+                <span class="blink-cursor">_</span>
+            </button>
+
+            <div class="output-grid">
+                <div class="output-box-container">
+                    <div class="output-header">
+                        <span>Port 443 (TLS)</span>
+                        <button class="btn-copy" onclick="copyText('output443')">Salin</button>
+                    </div>
+                    <textarea id="output443" readonly placeholder="Menunggu perintah..."></textarea>
+                </div>
+                <div class="output-box-container">
+                    <div class="output-header">
+                        <span>Port 80 (NTLS)</span>
+                        <button class="btn-copy" onclick="copyText('output80')">Salin</button>
+                    </div>
+                    <textarea id="output80" readonly placeholder="Menunggu perintah..."></textarea>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-container">
+            <div class="footer">
+                &copy;2026 // KIHEO<br>
+                LAMPUNG, INDONESIA
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container"></div>
+
+    <!-- Memanggil file JS -->
+    <script src="script.js"></script>
+</body>
+</html>
