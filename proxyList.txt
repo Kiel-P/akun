@@ -7486,6 +7486,7 @@
 202.155.95.132,443,ID,PT Deneva
 36.95.152.58,12137,ID,PT Telekomunikasi Indonesia
 43.173.1.153,8443,ID,PT Telekomunikasi Indonesia
+147.139.164.26,2111,ID,Alibaba Cloud LLC
 107.150.20.112,8443,IE,HostPapa
 167.160.177.68,2096,IE,HostPapa
 194.87.245.205,8443,IE,Baxet Group Inc
