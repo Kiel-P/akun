@@ -1,3 +1,11 @@
+103.150.192.28,443,ID,PT Biznet Gio Nusantara
+103.193.179.158,443,ID,PT Cloud Hosting Indonesia
+118.151.222.66,17317,ID,PT FASTEL SARANA INDONESIA
+119.235.252.35,46260,ID,PT. Raja Sepadan Abadi
+149.129.218.213,443,ID,Alibaba.com e-commerce 
+16.79.55.124,443,ID,Amazon.com, Inc.
+168.110.200.146,443,ID,Oracle Corporation
+43.229.254.182,443,ID,PT. Media Antar Nusa
 147.78.0.186,2053,AE,Oneprovidercom  Dubai Infrastructure
 147.78.0.186,8443,AE,Oneprovidercom  Dubai Infrastructure
 152.32.181.246,44070,AE,UCLOUD INFORMATION TECHNOLOGY HK LIMITED
